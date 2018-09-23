@@ -1,0 +1,22 @@
+$big-tablets: 1200px;
+$tablets: 768px;
+$phones: 320px;
+
+@mixin big-tablets {
+  @media screen and (max-width: $big-tablets) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

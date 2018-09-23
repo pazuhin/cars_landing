@@ -1,0 +1,80 @@
+.traid-in {
+  height: 100vh;
+  width: 100vw;
+  background: url(assets/images/bg/land-cruiser.jpg) center center no-repeat/cover;
+  margin-bottom: 95px;
+  position: relative; }
+  .traid-in__block {
+    width: 520px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    background: url(assets/images/bg/grey-cloud.jpg) center center no-repeat/cover;
+    opacity: 0.9;
+    position: absolute;
+    right: 3%;
+    top: 25%; }
+  .traid-in__block-title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 25px; }
+  .traid-in__list {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column; }
+  .traid-in__item {
+    position: relative; }
+    .traid-in__item:before {
+      background-color: #e50000;
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 15px;
+      left: -5px;
+      position: absolute;
+      top: 5px;
+      width: 15px; }
+    .traid-in__item:last-child {
+      margin-bottom: 10px; }
+      .traid-in__item:last-child .traid-in__item-text {
+        border-left: none; }
+  .traid-in__item-title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 25px; }
+  .traid-in__item-text {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    color: #fff;
+    border-left: 5px dotted #e50000;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-top: 10px; }
+  .traid-in__down-block-title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center; }
+  .traid-in__down-block {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .traid-in__down-block-link {
+    background-color: #e50000;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 200px; }
+
+/*# sourceMappingURL=traid-in.css.map */

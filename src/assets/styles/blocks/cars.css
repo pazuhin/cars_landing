@@ -1,0 +1,129 @@
+.cars {
+  display: flex;
+  margin-bottom: 100px; }
+  .cars__container {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .cars__title {
+    text-align: center;
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 32px;
+    color: #333333;
+    position: relative;
+    margin-bottom: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .cars__title:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #f27f7f;
+      position: absolute;
+      bottom: -30%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .cars__item {
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    margin-bottom: 50px; }
+    .cars__item:last-child {
+      margin-bottom: 60px; }
+  .cars__img {
+    display: flex;
+    flex: 1; }
+  .cars__info {
+    display: flex;
+    flex: 1;
+    background-color: #f6f6f6;
+    padding: 15px 25px 0px; }
+  .cars__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center; }
+    .cars__col--left {
+      font-family: toyota_textregular, Arial, sans-serif;
+      font-size: 18px; }
+  .cars__name {
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .cars__year, .cars__ls, .cars__transmission, .cars__drive, .cars__color {
+    margin-bottom: 15px; }
+  .cars__benefit-txt, .cars__credit-txt {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .cars__benefit-txt-red {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #e50000; }
+  .cars__benefit-txt-month {
+    font-size: 18px;
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-weight: 700;
+    color: #e50000; }
+  .cars__info-phone {
+    display: flex; }
+  .cars__info-details {
+    margin-right: 10px;
+    color: #6d6d6d;
+    font-family: 'toyota_displayregular', Arial, sans-serif;
+    font-size: 16px; }
+  .cars__phone {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333333;
+    margin-bottom: 20px; }
+  .cars__price-link {
+    background-color: #e50000;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center; }
+  .cars__img {
+    background-image: url("assets/images/others/car.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .cars__block-link {
+    color: #e50000;
+    display: inline-block;
+    font-family: toyota_displayregular,Arial,sans-serif;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    bottom: 0;
+    left: 50%; }
+    .cars__block-link:before {
+      background-color: #e50000;
+      top: 100%;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: 100%; }
+    .cars__block-link:after {
+      background-image: url(assets/images/others/down-arrow.jpg);
+      content: "";
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      width: 19px;
+      top: 50%;
+      right: -20%;
+      transform: translateY(-50%); }
+
+/*# sourceMappingURL=cars.css.map */

@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  min-height: 70px; }
+  .header__logo {
+    margin-right: 40px; }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .header__container:last-child {
+      margin-left: 0 auto; }
+  .header__contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; }
+  .header__contacts-text {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    margin-bottom: 5px; }
+  .header__phone {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    color: #e50000;
+    text-decoration: none; }
+
+.nav {
+  height: 100%; }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+  .nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .nav__item:hover {
+      background-color: #e50000;
+      transition: 0.5s; }
+  .nav__link {
+    padding: 24px 18px;
+    text-decoration: none;
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    color: #333333;
+    display: block; }
+    .nav__link:hover {
+      color: #fff; }
+
+/*# sourceMappingURL=header.css.map */

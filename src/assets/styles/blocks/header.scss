@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  min-height: 70px;
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:last-child {
+      margin-left: 0 auto;
+    }
+  }
+
+  &__contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    }
+
+
+  &__contacts-text {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  &__phone {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    color: #e50000;
+    text-decoration: none;
+  }
+}
+
+.nav {
+  height: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:hover {
+      background-color: #e50000;
+      transition: 0.5s;
+    }
+  }
+
+  &__link {
+    padding: 24px 18px;
+    text-decoration: none;
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    color: #333333;
+    display: block;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
