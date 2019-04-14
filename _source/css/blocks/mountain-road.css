@@ -1,0 +1,67 @@
+.mountain-road {
+  min-height: 320px;
+  width: 100%;
+  background-image: url(images/bg/mountain-road.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px; }
+  @media screen and (max-width: 500px) {
+    .mountain-road {
+      min-height: 170px;
+      margin-bottom: 84px; } }
+  .mountain-road__list {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around; }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .mountain-road__list {
+        margin: 0;
+        padding-top: 100px; } }
+  .mountain-road__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px; }
+    @media screen and (max-width: 500px) {
+      .mountain-road__item {
+        width: 85px; } }
+    .mountain-road__item:last-child {
+      margin-right: 0px; }
+  .mountain-road__num {
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    position: relative; }
+    @media screen and (max-width: 500px) {
+      .mountain-road__num {
+        font-size: 18px; } }
+  .mountain-road__text {
+    font-family: toyota_textregular, Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 25px;
+    text-transform: uppercase; }
+    @media screen and (max-width: 500px) {
+      .mountain-road__text {
+        font-size: 9px; } }
+  .mountain-road__arrow {
+    width: 24px;
+    height: 36px;
+    fill: white;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 500px) {
+      .mountain-road__arrow {
+        width: 10px;
+        left: -23px;
+        height: 20px; } }
+
+/*# sourceMappingURL=mountain-road.css.map */

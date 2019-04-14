@@ -1,0 +1,80 @@
+.contacts {
+  display: flex;
+  margin-right: 60px;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 500px) {
+    .contacts {
+      margin-right: 0px; } }
+  .contacts__container {
+    display: flex;
+    flex-direction: column; }
+  .contacts__title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative; }
+    @media screen and (max-width: 500px) {
+      .contacts__title {
+        font-size: 22px;
+        margin-bottom: 50px; } }
+    .contacts__title:after {
+      background-color: #f27f7f;
+      bottom: -20%;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%); }
+      @media screen and (max-width: 500px) {
+        .contacts__title:after {
+          width: 50px; } }
+  .contacts__list {
+    display: flex;
+    justify-content: center; }
+  .contacts__item {
+    display: flex;
+    margin-right: 80px; }
+    @media screen and (max-width: 500px) {
+      .contacts__item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px; } }
+    .contacts__item:last-child {
+      margin-right: 0; }
+  .contacts__block {
+    display: flex;
+    flex-direction: column; }
+  .contacts__pic-phone, .contacts__pic-placeholder, .contacts__pic-stopwatch {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; }
+    @media screen and (max-width: 500px) {
+      .contacts__pic-phone, .contacts__pic-placeholder, .contacts__pic-stopwatch {
+        width: 25px;
+        height: 25px;
+        margin-right: 6px; } }
+  .contacts__block-title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 500px) {
+      .contacts__block-title {
+        font-size: 13px;
+        margin-bottom: 4px;
+        text-align: center; } }
+
+.city, .street-address, .contacts__info {
+  font-family: 'toyota_textregular', Arial, sans-serif;
+  font-size: 24px; }
+  @media screen and (max-width: 500px) {
+    .city, .street-address, .contacts__info {
+      font-size: 7px;
+      text-align: center; } }
+
+/*# sourceMappingURL=contacts.css.map */

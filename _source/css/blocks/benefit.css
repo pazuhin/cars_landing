@@ -1,0 +1,76 @@
+.benefit {
+  min-height: 150px;
+  width: 100%;
+  background-color: #333333;
+  margin-bottom: 90px; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .benefit {
+      display: flex;
+      justify-content: center; } }
+  @media screen and (max-width: 500px) {
+    .benefit {
+      min-height: 88px;
+      margin-bottom: 35px; } }
+  .benefit__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .benefit__item {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #5c5c5c;
+    padding: 0 20px;
+    padding-bottom: 14px;
+    z-index: 15; }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .benefit__item {
+        width: 25%; } }
+    @media screen and (max-width: 500px) {
+      .benefit__item {
+        border-right: 1px solid #5c5c5c;
+        padding: 0 2px 10px;
+        max-width: 325px; } }
+    .benefit__item:hover {
+      cursor: pointer;
+      background-color: #e50000;
+      transition: 0.3s; }
+      .benefit__item:hover .benefit__big-num {
+        color: #fff; }
+    .benefit__item:first-child {
+      border-left: 2px solid #5c5c5c; }
+      @media screen and (max-width: 500px) {
+        .benefit__item:first-child {
+          border-left: 1px solid #5c5c5c; } }
+  .benefit__big-num {
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 50px;
+    color: #5c5c5c;
+    margin-right: 10px; }
+    @media screen and (max-width: 500px) {
+      .benefit__big-num {
+        font-size: 14px;
+        margin-right: 5px; } }
+  .benefit__name {
+    display: flex;
+    flex-direction: row;
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .benefit__name-txt {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 500px) {
+      .benefit__name-txt {
+        font-size: 8px; } }
+  .benefit__text {
+    font-family: toyota_textregular,Arial,sans-serif;
+    font-size: 14px;
+    color: #fff; }
+    @media screen and (max-width: 500px) {
+      .benefit__text {
+        font-size: 7px; } }
+
+/*# sourceMappingURL=benefit.css.map */

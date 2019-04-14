@@ -1,0 +1,205 @@
+.timer {
+  display: flex;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    &:after {
+      background-color: #f27f7f;
+      bottom: -20%;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/bg/timer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 365px;
+    align-items: center;
+
+    @media screen and (max-width: 500px) {
+      min-height: 194px;
+    }
+  }
+
+  &__day, &__our, &__min, &__sec {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    position: relative;
+    line-height: 1;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #919191;
+      border-radius: 50%;
+      top: 37%;
+      left: -13%;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #919191;
+      border-radius: 50%;
+      top: 51%;
+      left: -13%;
+    }
+  }
+
+  &__day {
+    &:before {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #919191;
+      border-radius: 50%;
+      top: 37%;
+      left: -13%;
+    }
+
+    &:after {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #919191;
+      border-radius: 50%;
+      top: 51%;
+      left: -13%;
+    }
+  }
+
+  &__sec {
+    margin-right: 0;
+  }
+
+  &__day-num, &__our-num, &__min-num, &__sec-num {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    font-size: 140px;
+    color: #fff;
+  }
+
+  &__day-text, &__our-text, &__min-text, &__sec-text {
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.flip-clock-wrapper {
+  max-width: 100% !important;
+  width: 620px !important;
+
+  @media screen and (max-width: 500px) {
+    min-height: 194px;
+    width: 250px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.flip-clock-dot {
+  background-color: #fff !important;
+}
+
+.flip-clock-label {
+  font-family: 'toyota_textregular', Arial, sans-serif !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+}
+
+.flip-clock-wrapper ul {
+  @media screen and (max-width: 500px) {
+    background-color: transparent !important;
+    margin: 2px !important;
+    width: 23px !important;
+    height: 43px !important;
+    font-size: 58px !important;
+    font-weight: bold !important;
+  }
+}
+
+.flip-clock-before {
+  @media screen and (max-width: 500px) {
+    display: none !important;
+  }
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  @media screen and (max-width: 500px) {
+    background-color: transparent !important;
+    border-radius: 6px !important;
+    font-size: 17px !important;
+  }
+}
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  @media screen and (max-width: 500px) {
+  background: transparent !important;}
+}
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow  {
+  @media screen and (max-width: 500px) {
+  background: transparent !important;}
+}
+
+.flip-clock-dot {
+  @media screen and (max-width: 500px) {
+    width: 5px !important;
+    height: 5px !important;
+  }
+}
+
+.flip-clock-active {
+  @media screen and (max-width: 500px) {
+line-height: 44px !important;
+  }
+}
+.flip-clock-dot.top {
+  @media screen and (max-width: 500px) {
+  top: 42px !important;}
+}
+
+.flip-clock-dot.bottom {
+  @media screen and (max-width: 500px) {
+  bottom: 44px !important;}
+}

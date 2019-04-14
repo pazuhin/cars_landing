@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  min-height: 70px; }
+  .header__logo {
+    margin-right: 40px; }
+    @media screen and (max-width: 500px) {
+      .header__logo {
+        margin-right: 15px; } }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .header__container:last-child {
+      margin-left: 0 auto; }
+  .header__contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; }
+  .header__contacts-text {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    margin-bottom: 5px; }
+    @media screen and (max-width: 500px) {
+      .header__contacts-text p {
+        font-size: 11px;
+        line-height: 1; } }
+  .header__phone {
+    font-family: 'toyota_textbold', Arial, sans-serif;
+    color: #e50000;
+    text-decoration: none; }
+    @media screen and (max-width: 500px) {
+      .header__phone {
+        font-size: 11px; } }
+  .header__logo-pic {
+    width: 100%; }
+
+.nav {
+  height: 100%; }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+  .nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 500px) {
+      .nav__item {
+        margin-right: 5px;
+        min-width: 40px; }
+        .nav__item:last-child {
+          margin-right: 0; } }
+    .nav__item:hover {
+      background-color: #e50000;
+      transition: 0.5s; }
+  .nav__link {
+    padding: 24px 18px;
+    text-decoration: none;
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    color: #333333;
+    display: block;
+    text-align: center; }
+    .nav__link:hover {
+      color: #fff; }
+    @media screen and (max-width: 500px) {
+      .nav__link {
+        font-size: 8px;
+        padding: 0px 0px; } }
+
+/*# sourceMappingURL=header.css.map */

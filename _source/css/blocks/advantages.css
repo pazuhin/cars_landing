@@ -1,0 +1,143 @@
+.advantages {
+  display: flex;
+  margin-bottom: 40px; }
+  .advantages__container {
+    display: flex;
+    flex-direction: column; }
+  .advantages__title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center; }
+    @media screen and (max-width: 500px) {
+      .advantages__title {
+        font-size: 20px;
+        margin-bottom: 25px; } }
+    .advantages__title:after {
+      background-color: #f27f7f;
+      bottom: -20%;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%); }
+      @media screen and (max-width: 500px) {
+        .advantages__title:after {
+          width: 50px;
+          height: 2px; } }
+  .advantages__block {
+    display: flex;
+    flex-direction: column; }
+  .advantages__row {
+    margin-bottom: 70px; }
+    @media screen and (max-width: 500px) {
+      .advantages__row {
+        margin-bottom: 0px; } }
+  .advantages__block-title {
+    font-family: toyota_textregular, Arial, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 70px; }
+    @media screen and (max-width: 500px) {
+      .advantages__block-title {
+        margin-bottom: 40px; } }
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 500px) {
+      .advantages__list {
+        flex-direction: column;
+        margin-bottom: 0; } }
+  .advantages__item {
+    display: flex;
+    flex: 1; }
+    @media screen and (max-width: 500px) {
+      .advantages__item {
+        margin-bottom: 10px;
+        align-items: center; } }
+  .advantages__pic {
+    margin-right: 15px; }
+  .advantages__pic-medal {
+    background-image: url(images/others/medal.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-medal {
+        border-right: 2px dotted #e50000; } }
+  .advantages__pic-garage {
+    background-image: url(images/others/garage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-garage {
+        border-right: 2px dotted #e50000; } }
+  .advantages__pic-man {
+    background-image: url(images/others/man.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-man {
+        border-right: 2px dotted #e50000; } }
+  .advantages__pic-gift {
+    background-image: url(images/others/gift.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-gift {
+        border-right: 2px dotted #e50000; } }
+  .advantages__pic-bank {
+    background-image: url(images/others/bank.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-bank {
+        border-right: 2px dotted #e50000; } }
+  .advantages__pic-exchange {
+    background-image: url(images/others/exchange.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 36px;
+    border-right: 3px dotted #e50000; }
+    @media screen and (max-width: 500px) {
+      .advantages__pic-exchange {
+        border-right: 2px dotted #e50000; } }
+  .advantages__text {
+    font-family: toyota_displayregular, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal; }
+    @media screen and (max-width: 500px) {
+      .advantages__text {
+        font-size: 14px; } }
+
+@media screen and (max-width: 500px) {
+  .advantages__text br {
+    display: none; } }
+
+/*# sourceMappingURL=advantages.css.map */

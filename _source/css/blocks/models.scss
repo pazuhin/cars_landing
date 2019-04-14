@@ -1,0 +1,413 @@
+.models {
+  display: flex;
+  box-shadow: inset 0px 40px 40px -35px rgba(0, 0, 0, .1);
+  height: 100%;
+  position: relative;
+  margin-bottom: 50px;
+
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background-color: #f6f6f6;
+    top: 100px;
+
+    @media screen and (max-width: 500px) {
+      top: 50px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__list {
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    min-height: 100px;
+    display: flex;
+    align-content: center;
+    z-index: 15;
+
+    @media screen and (max-width: 500px) {
+      min-height: 50px;
+    }
+  }
+
+  &__item {
+    -webkit-box-flex: 1;
+    -webkit-box-pack: center;
+    align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    min-height: 100px;
+
+    @media screen and (max-width: 500px) {
+      min-height: 50px;
+    }
+
+    &:hover {
+      background-color: #e50000;
+      transition: 0.5s;
+    }
+  }
+
+  &__link {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    color: #333;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+
+    @media screen and (max-width: 500px) {
+      font-size: 9px;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__col--left {
+    width: 35%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+
+    @media screen and (max-width: 500px) {
+      padding-top: 35px;
+    }
+  }
+
+  &__care-name {
+    color: #fff;
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 32px;
+    position: relative;
+    z-index: 5;
+    padding-left: 31px;
+    margin-bottom: 15px;
+
+
+
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+      margin-bottom: 0;
+      z-index: -1;
+    }
+
+    &:before {
+      background-image: url(images/bg/cloud.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: "";
+      display: block;
+      height: 90px;
+      left: 0px;
+      position: absolute;
+      top: -25px;
+      width: 220px;
+      z-index: -5;
+
+      @media screen and (max-width: 500px) {
+        z-index: -1;
+        width: 150px;
+        top: -13px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__text {
+    padding-left: 31px;
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 11px;
+      z-index: 55;
+    }
+  }
+
+  &__conditions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    flex: 1;
+    font-family: 'toyota_textbold',Arial,sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row-text {
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+    }
+  }
+
+  &__credit, &__benefit, &__disc, &__gift, &__gift-tires {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    flex-direction: column;
+    line-height: 1;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #999999;
+      position: absolute;
+      top: -8px;
+      top: -8px;
+      left: 0;
+
+      @media screen and (max-width: 500px) {
+        height: 2px;
+      }
+    }
+  }
+
+  &__small-txt {
+    font-family: 'toyota_displaybold',Arial,sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: flex;
+
+    @media screen and (max-width: 500px) {
+      font-size: 8px;
+    }
+  }
+
+  &__offer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__test-drive {
+    color: #e50000;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: 193px;
+    margin-left: 40px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: #E35854;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 145px;
+      font-size: 12px;
+      margin-bottom: 20px;
+
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e50000;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &-pic {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: -40px;
+    }
+  }
+
+  &__offer-link {
+    background-color: #e50000;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 0;
+    text-decoration: none;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #E35854;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 10px 0px;
+      text-align: center;
+      text-decoration: none;
+      width: 156px;
+      font-size: 12px;
+    }
+  }
+
+  &__found-chip {
+    text-decoration: none;
+    font-family: 'toyota_textregular', Arial, sans-serif;
+    border-bottom: 2px dotted #e50000;
+    color: #333333;
+    width: 132px;
+    margin-left: 115px;
+
+    @media screen and (max-width: 500px) {
+      margin-left: 20px;
+      font-size: 14px;
+      width: 114px;
+    }
+  }
+
+  &__col--right {
+    width: 62.5%;
+    position: relative;
+  }
+
+  &__image {
+    height: 618px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 758px;
+    @media screen and (max-width: 500px) {
+      top: 27%;
+      width: 268px;
+    }
+  }
+
+  &__image-pic {
+    position: absolute;
+    z-index: 10;
+    background-image: url(images/bg/mount.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__banner-car {
+    position: absolute;
+    background-image: url(images/bg/car.png);
+    background-size: contain;
+    height: 60%;
+    top: 35%;
+    left: 5%;
+    z-index: 10;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__offer-txt {
+    height: 67px;
+    position: absolute;
+    right: 0;
+    padding: 0 45px;
+    width: 345px;
+    text-align: left;
+    font-size: 18px;
+    font-family: toyota_textbold, Arial,sans-serif;
+    z-index: 999;
+    color: #fff;
+    padding-top: 35px;
+
+    @media screen and (max-width: 500px) {
+      top: 25px;
+      width: 130px;
+      text-align: center;
+      padding: 0px;
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    &:before {
+      background-image: url(images/others/grey-rect.png);
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -5;
+      background-repeat: no-repeat;
+      padding: 0px;
+      top: 15px;
+      left: -20px;
+
+      @media screen and (max-width: 500px) {
+        width: 130px;
+        left: -10px;
+        top: -11px;
+        background-size: contain;
+      }
+    }
+
+    &:after {
+      background-image: url(images/others/red-rect.png);
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -5;
+      background-repeat: no-repeat;
+      top: 23px;
+      left: -20px;
+
+      @media screen and (max-width: 500px) {
+        width: 140px;
+        top: -4px;
+        left: -10px;
+        background-size: contain;
+      }
+    }
+  }
+}

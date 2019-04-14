@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  background-color: #f0f0f0;
+  flex-direction: column;
+
+  &__container {
+    position: relative;
+  }
+
+  &__sale-block {
+    padding-top: 120px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 500px) {
+      padding-top: 50px;
+    }
+  }
+
+  &__sale-title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e50000;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+
+  &__down-arrow {
+    display: block;
+    width: 19px;
+    position: absolute;
+    left: 12%;
+    height: 100%;
+    background-image: url(images/others/down-arrow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: 500px) {
+      width: 15px;
+      left: 32%;
+    }
+
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
+  }
+
+  &__sale-text {
+    font-family: toyota_textregular, Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 10px;
+    }
+  }
+
+  &__down-block {
+    min-height: 80px;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 500px) {
+      min-height: 50px;
+    }
+  }
+
+  &__down-text {
+    font-family: toyota_textregular, Arial, sans-serif;
+    font-size: 14px;
+    color: #868686;
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #e50000;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      background-color: #E35854;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 25px;
+      top: 3%;
+      width: 25px;
+    }
+  }
+  &__link-arrow {
+    background-image: url(images/others/down-up.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+
+    @media screen and (max-width: 500px) {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &__up-link {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.footer__container, .footer__down-block-container {
+  @media screen and (max-width: 500px) {
+    margin: 0;
+    width: 375px;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin: 0;
+    width: 320px;
+  }
+}

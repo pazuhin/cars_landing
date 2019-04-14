@@ -1,0 +1,94 @@
+.unic-offer {
+  display: flex;
+  min-height: 280px;
+  background-color: #f0f0f0;
+  justify-content: center; }
+  .unic-offer__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .unic-offer__title {
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 32px;
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 25px; }
+    @media screen and (max-width: 500px) {
+      .unic-offer__title {
+        font-size: 20px; } }
+    @media screen and (max-width: 320px) {
+      .unic-offer__title {
+        font-size: 17px; } }
+    .unic-offer__title:after {
+      background-color: #f27f7f;
+      bottom: -10%;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      width: 80px;
+      transform: translateX(-50%); }
+      @media screen and (max-width: 500px) {
+        .unic-offer__title:after {
+          width: 50px; } }
+  .unic-offer__text {
+    font-family: toyota_displaybold,Arial,sans-serif;
+    font-size: 24px;
+    margin-bottom: 35px; }
+    @media screen and (max-width: 500px) {
+      .unic-offer__text {
+        font-size: 12px; } }
+    @media screen and (max-width: 320px) {
+      .unic-offer__text {
+        font-size: 11px; } }
+  .unic-offer #unic-offer__txt {
+    font-size: 16px;
+    padding: 15px 0 15px 25px;
+    border: 1px solid #cecece;
+    border-radius: 30px;
+    width: 100%;
+    outline: none; }
+    @media screen and (max-width: 500px) {
+      .unic-offer #unic-offer__txt {
+        font-size: 11px; } }
+    @media screen and (max-width: 320px) {
+      .unic-offer #unic-offer__txt {
+        padding: 13px 0 15px 25px;
+        font-size: 10px; } }
+  .unic-offer__input-block {
+    width: 630px;
+    position: relative; }
+    @media screen and (max-width: 500px) {
+      .unic-offer__input-block {
+        width: 355px; } }
+    @media screen and (max-width: 320px) {
+      .unic-offer__input-block {
+        width: 300px; } }
+  .unic-offer__link {
+    background-color: #e50000;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .unic-offer__link {
+        width: 160px;
+        font-size: 12px; } }
+    @media screen and (max-width: 320px) {
+      .unic-offer__link {
+        font-size: 10px;
+        width: 150px; } }
+  .unic-offer__link:hover {
+    background-color: #E35854; }
+
+/*# sourceMappingURL=unic-offer.css.map */

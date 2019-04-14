@@ -1,0 +1,51 @@
+.unic-offer-down {
+  min-height: 140px;
+  background-image: url(images/bg/unic-offer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 500px) {
+    padding: 0 2%;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: toyota_displaybold, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 100px;
+    color: #fff;
+
+    @media screen and (max-width: 500px) {
+      font-size: 13px;
+      margin-right: 44px;
+    }
+  }
+
+  &__link {
+    background-color: #e50000;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #E35854;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 9px 1px;
+      width: 242px;
+      font-size: 11px;
+    }
+  }
+}
