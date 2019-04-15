@@ -28,29 +28,6 @@ function init() {
 }
 'use strict';
 
-// var linkNav = document.querySelectorAll('[href^="#"]'),
-//     V = 0.3;
-// for (var i = 0; i < linkNav.length; i++) {
-//     linkNav[i].addEventListener('click', function (e) {
-//         e.preventDefault();
-//         var w = window.pageYOffset,
-//             hash = this.href.replace(/[^#]*(.*)/, '$1');
-//         t = document.querySelector(hash).getBoundingClientRect().top,
-//             start = null;
-//         requestAnimationFrame(step);
-//         function step(time) {
-//             if (start === null) start = time;
-//             var progress = time - start,
-//                 r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
-//             window.scrollTo(0, r);
-//             if (r != w + t) {
-//                 requestAnimationFrame(step)
-//             } else {
-//                 location.hash = hash
-//             }
-//         }
-//     }, false);
-// }
 $(function () {
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
@@ -172,3 +149,25 @@ function cycleSlider() {
 }
 
 cycleSlider();
+
+var btn = document.querySelector('.footer__sale-title');
+btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var target = e.target;
+    var arrow = target.firstElementChild;
+    if (target.classList.contains('footer__sale-title')) {
+        var content = target.nextElementSibling;
+        var item = target.parentNode;
+        console.log(content);
+        console.log(item);
+        if (!content.classList.contains('is-active')) {
+            content.classList.add('is-active');
+            content.style.height = content.scrollHeight + 'px';
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.remove('is-active');
+            content.style.height = 0;
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    }
+});

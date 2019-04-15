@@ -26,26 +26,26 @@
       margin-right: 44px;
     }
   }
+}
 
-  &__link {
-    background-color: #e50000;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    padding: 13px 0;
-    text-align: center;
-    text-decoration: none;
-    width: 230px;
-    cursor: pointer;
+.unic-offer-down__link {
+  background-color: #e50000;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  padding: 13px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 230px;
+  cursor: pointer;
 
-    &:hover {
-      background-color: #E35854;
-    }
+  &:hover {
+    background-color: #E35854;
+  }
 
-    @media screen and (max-width: 500px) {
-      padding: 9px 1px;
-      width: 242px;
-      font-size: 11px;
-    }
+  @media screen and (max-width: 500px) {
+    padding: 9px 1px;
+    width: 242px;
+    font-size: 11px;
   }
 }
